@@ -1,0 +1,29 @@
+{
+  "name": "mesos-azure-do",
+  "version": "1.0.0",
+  "description": "> Note: You can and should get familiar with the paramaters in `./cluster-tools/clusterconfig.sh before you start. > You will be adding info to this file as you create your cluster.  Doing this allows all the scripts below to work properly and simplifies life.",
+  "author": {
+    "name": "DFW Talent",
+    "email": ""
+  },
+  "contributors": [
+    {
+      "name": "Daniel Scholl",
+      "email": ""
+    }
+  ],
+  "engines": {
+    "node": "6.9.1",
+    "npm": "4.0.2"
+  },
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "./scripts/install.sh",
+    "start": "./scripts/connect.sh",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "azure-cli": "^0.10.8"
+  }
+}
