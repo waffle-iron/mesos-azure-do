@@ -20,7 +20,7 @@
   "scripts": {
     "postinstall": "./scripts/install.sh",
     "start": "./scripts/connect.sh",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "update": "./scripts/prepMaster.sh"
   },
   "license": "ISC",
   "dependencies": {

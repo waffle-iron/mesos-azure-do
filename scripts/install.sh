@@ -4,6 +4,10 @@
 ENV_SETUP=".env"
 source "$ENV_SETUP"
 
+if [ ! -d "tmp" ]; then
+  mkdir tmp
+fi
+
 azure login
 azure account set ${AZURE_SUBSCRIPTION}
 azure config mode arm
