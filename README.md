@@ -14,9 +14,18 @@ $ ssh-keygen -t rsa -b 4096 -C "azureuser@dfwtalent.com" -f id_rsa
 
 4. npm install  (** Installs Azure-CLI and setups up the DCOS Cluster)
 
-5. npm start (** Connects to Master)
+5. npm run update (** Updates Master Node)
 
-6. Access DCOS/Marathon/Mesos  
+6. npm start (** Connects to Master)
+
+7. Update your cluster to the latest OS patch level
+
+```bash
+{master}$ cd tools
+{master}$ upgrade.sh
+```
+
+8. Access DCOS/Marathon/Mesos  
     * While connected via ssh (Above)
         * DCOS: http://localhost:8080/
         * Marathon: http://localhost:8080/marathon/
@@ -50,11 +59,4 @@ To find these instructions:
 * Follow the instructions that appear in the modal.
 
 
-### Update your cluster
-1. npm run update
-2. npm start
 
-```bash
-{master}$ cd tools
-{master}$ upgrade.sh
-```
