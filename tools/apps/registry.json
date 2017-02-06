@@ -1,0 +1,32 @@
+{
+  "id": "/registry",
+	"mem": 128,
+	"cpus": 0.5,
+	"instances": 1,
+  "cmd": "docker run -p 5000:5000 --name=registry registry:2.5.0",
+  "disk": 0,
+  "portDefinitions": [
+    {
+      "port": 10008,
+      "protocol": "tcp",
+      "labels": {}
+    }
+  ],
+	"healthChecks": [
+		{
+			"protocol": "TCP",
+			"portIndex": 0,
+			"gracePeriodSeconds": 5,
+			"intervalSeconds": 60,
+			"timeoutSeconds": 10,
+			"maxConsecutiveFailures": 3,
+			"ignoreHttp1xx": false
+		}
+	],
+  "env": {
+		"REGISTRY_STORAGE": "azure",
+		"REGISTRY_STORAGE_AZURE_ACCOUNTNAME": "<YOUR_STORAGE_ACCOUNTNAME>",
+		"REGISTRY_STORAGE_AZURE_CONTAINER": "<YOUR_STORAGE_CONTAINER>",
+		"REGISTRY_STORAGE_AZURE_ACCOUNTKEY": "<YOUR_STORAGE_ACCOUNTKEY>"
+	}
+}
