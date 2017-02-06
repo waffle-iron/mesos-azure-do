@@ -20,7 +20,9 @@
   "scripts": {
     "postinstall": "./scripts/install.sh",
     "start": "./scripts/connect.sh",
-    "update": "./scripts/prepMaster.sh"
+    "update": "./scripts/prepMaster.sh",
+    "storage": "./scripts/setupStorage.sh",
+    "keyvault": "./scripts/setupKeyValut.sh"
   },
   "license": "ISC",
   "dependencies": {
