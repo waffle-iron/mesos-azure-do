@@ -16,4 +16,4 @@ do
   /usr/bin/scp insecureRegistry.sh $line:~
 done
 
-pdsh -R ssh -l $CLUSTER_USERNAME -w  ^agentlist  "sudo chmod 744 insecureRegistry.sh && sudo ./insecureRegistry.sh"
+pdsh -R ssh -w  ^agentlist  "sudo chmod 744 insecureRegistry.sh && sudo ./insecureRegistry.sh"

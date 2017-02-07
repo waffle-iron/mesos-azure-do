@@ -10,6 +10,7 @@ fi
 if [ ! -d "apps" ]; then
   mkdir apps
   cp tools/apps/registry_sample.json apps/registry.json
+  cp tools/app/helloweb.json app/helloweb.json
 fi
 
 azure login
