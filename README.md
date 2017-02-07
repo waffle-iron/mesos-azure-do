@@ -92,8 +92,8 @@ _LocalHost Registry_
 >Note:  You must add in the values required in the tools/apps/registry.json
 
 ```bash
-$ npm run platform:start
-$ npm run platform:stop
+$ npm run registry:start
+$ npm run registry:stop
 ```
 
 
