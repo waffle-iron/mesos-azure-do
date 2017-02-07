@@ -10,8 +10,6 @@
 			]
 		],
 		"cpus": 1,
-		"mem": 512,
-		"bind-http-https": false,
-		"role": ""
+		"mem": 512
 	}
 }
