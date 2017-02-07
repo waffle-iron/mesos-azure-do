@@ -108,6 +108,12 @@ $ dcos marathon app add apps/registry.json
 > ```
 
 
+3. Sample Web Site
+
+```
+$ dcos marathon app add apps/helloweb.json
+``` 
+
 ### Install Azure Docker Volume Driver
 >Note: If you want to use Docker Files shares for persistent storage, install the Azure Docker Volume Driver.
 

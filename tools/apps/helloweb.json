@@ -34,7 +34,7 @@
   },
   "labels": {
     "HAPROXY_GROUP":"external",
-    "HAPROXY_0_VHOST":"dfwtalent-dks-agents.centralus.cloudapp.azure.com",
+    "HAPROXY_0_VHOST":"<FQDN>",
     "HAPROXY_0_MODE":"http"
   }
 }
