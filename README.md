@@ -100,7 +100,7 @@ $ npm run registry:stop
 _Cluster_
 
 ```
-$ dcos marathon app add tools/apps/registry.json
+$ dcos marathon app add apps/registry.json
 ```
 
 ### Install Azure Docker Volume Driver
