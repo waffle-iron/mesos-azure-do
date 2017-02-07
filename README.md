@@ -102,6 +102,11 @@ _Cluster_
 ```
 $ dcos marathon app add apps/registry.json
 ```
+>Note:  If you remove the registry you must clean up the agents docker engines with the following.
+> ```
+> {master}$ tools/do-agents.sh sudo docker rm -f registry
+> ```
+
 
 ### Install Azure Docker Volume Driver
 >Note: If you want to use Docker Files shares for persistent storage, install the Azure Docker Volume Driver.

@@ -12,17 +12,6 @@
       "labels": {}
     }
   ],
-	"healthChecks": [
-		{
-			"protocol": "TCP",
-			"portIndex": 0,
-			"gracePeriodSeconds": 5,
-			"intervalSeconds": 60,
-			"timeoutSeconds": 10,
-			"maxConsecutiveFailures": 3,
-			"ignoreHttp1xx": false
-		}
-	],
   "env": {
 		"REGISTRY_STORAGE": "azure",
 		"REGISTRY_STORAGE_AZURE_ACCOUNTNAME": "<YOUR_STORAGE_ACCOUNTNAME>",
