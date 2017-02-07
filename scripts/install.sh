@@ -7,6 +7,10 @@ source "$ENV_SETUP"
 if [ ! -d "tmp" ]; then
   mkdir tmp
 fi
+if [ ! -d "apps" ]; then
+  mkdir apps
+  cp tools/apps/registry_sample.json apps/registry.json
+fi
 
 azure login
 azure account set ${AZURE_SUBSCRIPTION}
