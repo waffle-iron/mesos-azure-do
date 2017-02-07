@@ -12,7 +12,7 @@ FILESHARE=fileshare
 if [[ ! ${AZURE_STORAGE_ACCESS_KEY} ]]
 	then
 		echo 'ERROR:  *** Environment Variable AZURE_STORAGE_ACCESS_KEY not set **'
-    azure storage account keys list ${AZURE_STORAGE_ACCOUNT} -g mesos-cluster
+    azure storage account keys list ${AZURE_STORAGE_ACCOUNT} -g {AZURE_RESOURCE_GROUP}
 		exit 0
 	fi
 

@@ -71,14 +71,37 @@ $ npm run keyvault
 ```
 
 
+### Create Applications
 
-8. Access DCOS/Marathon/Mesos  
-    * While connected via ssh (Above)
-    * DCOS: http://localhost:8080/
-    * Marathon: http://localhost:8080/marathon/
-    * Mesos: http://localhost:8080/mesos/
+Access DCOS/Marathon/Mesos  
+  * While connected via ssh (Above)
+  * DCOS: http://localhost:8080/
+  * Marathon: http://localhost:8080/marathon/
+  * Mesos: http://localhost:8080/mesos/
+
+1. Marathon-LB
+
+```bash
+{master}$ ./tools/marathon.sh
+```
+
+2. Private Registry
+
+_LocalHost Registry_
+
+>Note:  You must add in the values required in the tools/apps/registry.json
+
+```bash
+$ npm run platform:start
+$ npm run platform:stop
+```
 
 
+_Cluster_
+
+```
+$ dcos marathon app add tools/apps/registry.json
+```
 
 ### Install Azure Docker Volume Driver
 >Note: If you want to use Docker Files shares for persistent storage, install the Azure Docker Volume Driver.

@@ -22,7 +22,9 @@
     "start": "./scripts/connect.sh",
     "update": "./scripts/prepMaster.sh",
     "storage": "./scripts/setupStorage.sh",
-    "keyvault": "./scripts/setupKeyVault.sh"
+    "keyvault": "./scripts/setupKeyVault.sh",
+    "registry:start": "docker-compose -f registry.yml -p registry up -d",
+    "registry:stop": "docker-compose -f registry.yml -p registry kill & docker-compose -f registry.yml -p registry rm --force"
   },
   "license": "ISC",
   "dependencies": {
