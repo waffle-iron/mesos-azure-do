@@ -4,7 +4,7 @@ yarn-error.log
 .env
 .ssh
 tools/*list
-apps
+/apps
 
 
 templates/params.json
