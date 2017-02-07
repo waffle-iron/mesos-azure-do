@@ -9,8 +9,8 @@
 				"external"
 			]
 		],
-		"cpus": 2,
-		"mem": 1024,
+		"cpus": 1,
+		"mem": 512,
 		"bind-http-https": false,
 		"role": ""
 	}

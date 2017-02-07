@@ -55,7 +55,7 @@ curl -fLsS --retry 20 -Y 100000 -y 60 https://downloads.dcos.io/binaries/cli/lin
 ```bash
 {master}$ cd tools
 {master}$ ./upgrade.sh
-{master}$ ./masters-do.sh sudo shutdown -r
+{master}$ ./agents-do.sh sudo reboot now
 ```
 
 3. Setup the Storage System
