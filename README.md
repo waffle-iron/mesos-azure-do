@@ -58,6 +58,20 @@ curl -fLsS --retry 20 -Y 100000 -y 60 https://downloads.dcos.io/binaries/cli/lin
 {master}$ ./masters-do.sh sudo shutdown -r
 ```
 
+3. Setup the Storage System
+
+```bash
+$ npm run storage
+```
+
+4. Optional Keystore Setup
+
+```bash
+$ npm run keyvault
+```
+
+
+
 8. Access DCOS/Marathon/Mesos  
     * While connected via ssh (Above)
     * DCOS: http://localhost:8080/

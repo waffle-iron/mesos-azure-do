@@ -22,7 +22,7 @@
     "start": "./scripts/connect.sh",
     "update": "./scripts/prepMaster.sh",
     "storage": "./scripts/setupStorage.sh",
-    "keyvault": "./scripts/setupKeyValut.sh"
+    "keyvault": "./scripts/setupKeyVault.sh"
   },
   "license": "ISC",
   "dependencies": {

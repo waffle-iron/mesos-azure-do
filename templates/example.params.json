@@ -9,7 +9,7 @@
       "value": 3
     },
     "agentVMSize": {
-      "value": "Standard_A2"
+      "value": "Standard_A0"
     },
     "linuxAdminUsername": {
       "value": "azureuser"

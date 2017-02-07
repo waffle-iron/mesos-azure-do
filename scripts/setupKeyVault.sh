@@ -8,7 +8,7 @@ source "$ENV_SETUP"
 KEY_VAULT=${DNS_PREFIX}-KeyVault
 
 
-if [[ ! ${AZURE_RESOURCE_GROUP} || ${AZURE_LOCATION} ]]
+if [[ ! ${AZURE_RESOURCE_GROUP} || ! ${AZURE_LOCATION} ]]
 	then
 		echo 'ERROR:  *** Environment Variable AZURE_RESOURCE_GROUP or AZURE_LOCATION not set **'
 		exit 0
