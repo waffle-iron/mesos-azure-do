@@ -6,7 +6,6 @@
     "mem": 2048,
     "heap": 1024,
     "api_port": 9000,
-    "placement_strategy": "NODE",
     "data_center": "dc1"
   },
   "nodes": {

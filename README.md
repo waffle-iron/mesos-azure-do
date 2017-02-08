@@ -101,6 +101,8 @@ $ npm run registry:stop
 _Cluster_
 
 ```
+{master}$ cd tools
+{master}$ ./registry.sh
 $ dcos marathon app add apps/registry.json
 ```
 >Note:  If you remove the registry you must clean up the agents docker engines with the following.
@@ -112,8 +114,22 @@ $ dcos marathon app add apps/registry.json
 3. Sample Web Site
 
 ```
-$ dcos marathon app add apps/helloweb.json
+$ dcos marathon app add apps/test_web.json
 ``` 
+
+
+
+4. Cassandra
+
+__3 Node Cassandra Service__
+```
+{master}$ cd tools
+{master}$ cassandra.sh
+```
+
+__2 Node Cassandra Group__
+
+
 
 ### Install Azure Docker Volume Driver
 >Note: If you want to use Docker Files shares for persistent storage, install the Azure Docker Volume Driver.
