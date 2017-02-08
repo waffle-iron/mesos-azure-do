@@ -1,7 +1,7 @@
 #!/bin/bash
 #set -o errexit -o pipefail
 
-ENV_SETUP=".env"
+ENV_SETUP=".env.sh"
 source "$ENV_SETUP"
 
 if [ ! -d "tmp" ]; then

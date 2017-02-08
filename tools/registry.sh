@@ -1,7 +1,7 @@
 #!/bin/bash
 #set -o errexit -o pipefail
 
-ENV_SETUP=".env"
+ENV_SETUP=".env.sh"
 source "$ENV_SETUP"
 
 tput setaf 1; echo 'This will enable the Docker daemons in the cluster to connect to registry.marathon.mesos:5000'

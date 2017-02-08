@@ -1,7 +1,7 @@
 #!/bin/bash
 #set -o errexit -o pipefail
 
-ENV_SETUP=".env"
+ENV_SETUP=".env.sh"
 source "$ENV_SETUP"
 
 
@@ -34,7 +34,7 @@ ssh -p 2200 -i ./.ssh/id_rsa ${USER}@${MASTER0_FQDN}  "chmod 600 /home/${USER}/.
 
 # Create Tools
 ssh -p 2200 -i ./.ssh/id_rsa ${USER}@${MASTER0_FQDN}  "mkdir ~/tools"
-scp -i ./.ssh/id_rsa -P 2200 ./.env ${USER}@${MASTER0_FQDN}:/home/${USER}/tools  # Copy Environment File
+scp -i ./.ssh/id_rsa -P 2200 ./.env.sh ${USER}@${MASTER0_FQDN}:/home/${USER}/tools  # Copy Environment File
 scp -i ./.ssh/id_rsa -P 2200 ./tmp/agentlist ./tmp/masterlist ${USER}@${MASTER0_FQDN}:/home/${USER}/tools  # Copy MasterList and AgentList
 scp -i ./.ssh/id_rsa -P 2200 -r tools/* ${USER}@${MASTER0_FQDN}:/home/${USER}/tools # Copy Tools
 

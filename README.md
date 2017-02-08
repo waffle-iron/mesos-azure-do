@@ -18,7 +18,8 @@ $ mkdir .ssh && cd .ssh
 $ ssh-keygen -t rsa -b 4096 -C "azureuser@dfwtalent.com" -f id_rsa
 ```
 
-2. Using the .env_sample file create an .env file with the proper values set.
+2. Using the .env_sample file create an .env.sh file with the proper values set.
+  >Note: You should have a duplicate .env without the exports also so docker-compose will work.
 
 3. Using the ./templates/example.params.json create the file ./templates/params.json and ensure proper values are set.
   >Note: DNS_PREFIX=dfwtalent in templates should be appended with a '-'  "value": "dfwtalent-"

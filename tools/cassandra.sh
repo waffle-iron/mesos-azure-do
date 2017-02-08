@@ -5,4 +5,7 @@ ENV_SETUP=".env.sh"
 source "$ENV_SETUP"
 
 #////////////////////////////////
-PDSH_SSH_ARGS_APPEND="-i ~/.ssh/id_rsa" pdsh -l $USER -R ssh -w ^masterlist "$@"
+
+
+#////////////////////////////////
+dcos package install --options=./apps/cassandra.json cassandra --yes
