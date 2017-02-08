@@ -10,7 +10,8 @@ fi
 if [ ! -d "apps" ]; then
   mkdir apps
   cp tools/apps/registry_sample.json apps/registry.json
-  cp tools/app/helloweb.json app/helloweb.json
+  cp tools/app/test_web_app.json app/test_web.json
+  cp tools/app/vendor_db_cassandra_group.json app/vendor_db_cassandra.json
 fi
 
 azure login
