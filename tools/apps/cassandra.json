@@ -12,12 +12,12 @@
   "nodes": {
     "count": 3,
     "cpus": 0.5,
-    "mem": 4096,
+    "mem": 2048,
     "disk": 10240,
     "disk_type": "ROOT",
     "seeds": 2,
     "heap": {
-      "size": 2048,
+      "size": 1024,
       "new": 100,
       "gc": "CMS"
     }
