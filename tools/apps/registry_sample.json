@@ -7,7 +7,7 @@
   "disk": 0,
   "portDefinitions": [
     {
-      "port": 10008,
+      "port": 10000,
       "protocol": "tcp",
       "labels": {}
     }

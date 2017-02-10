@@ -83,22 +83,13 @@ Access DCOS/Marathon/Mesos
 1. Marathon-LB
 
 ```bash
-{master}$ ./tools/marathon.sh
+{master}$ cd tools
+{master}$ ./marathon.sh
 ```
 
 2. Private Registry
 
-_LocalHost Registry_
-
->Note:  You must add in the values required in the tools/apps/registry.json
-
-```bash
-$ npm run registry:start
-$ npm run registry:stop
-```
-
-
-_Cluster_
+_Cluster Registry_
 
 ```
 {master}$ cd tools
@@ -109,6 +100,16 @@ $ dcos marathon app add apps/registry.json
 > ```
 > {master}$ tools/do-agents.sh sudo docker rm -f registry
 > ```
+
+
+_LocalHost Registry_
+
+>Note:  You must add in the values required in the tools/apps/registry.json
+
+```bash
+$ npm run registry:start
+$ npm run registry:stop
+```
 
 
 3. Sample Web Site

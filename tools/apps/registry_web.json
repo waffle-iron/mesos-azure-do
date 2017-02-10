@@ -1,12 +1,12 @@
 {
-  "id": "/test/web",
-  "cpus": 1,
-  "mem": 512,
+  "id": "registry-ui",
+  "cpus": 0.5,
+  "mem": 1024,
   "instances": 1,
   "container": {
     "type": "DOCKER",
     "docker": {
-      "image": "dockercloud/hello-world",
+      "image": "konradkleine/docker-registry-frontend:v2",
       "privileged": false,
       "forcePullImage": true,
       "network": "BRIDGE",
@@ -20,10 +20,13 @@
       ]
     }
   },
+  "env": {
+    "ENV_DOCKER_REGISTRY_PORT": "5000",
+    "ENV_DOCKER_REGISTRY_HOST": "registry.marathon.mesos"
+  },
   "labels": {
     "HAPROXY_GROUP": "external",
-    "HAPROXY_0_VHOST": "<FQDN>",
-    "HAPROXY_0_MODE": "http"
+    "HAPROXY_0_VHOST": "<FQDN>"
   },
   "healthChecks": [
     {
