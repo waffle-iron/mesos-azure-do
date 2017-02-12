@@ -25,7 +25,7 @@ $ ssh-keygen -t rsa -b 4096 -C "azureuser@dfwtalent.com" -f id_rsa
   >Note: DNS_PREFIX=dfwtalent in templates should be appended with a '-'  "value": "dfwtalent-"
 
 4. npm install  (** Installs Azure-CLI and setups up the DCOS Cluster)
-  >Note: The azure subscription must ahve the proper Resource Providers registered. (Batch, Compute, ContainerService, KeyValut, Network, Storage)
+  >Note: The azure subscription must have the proper Resource Providers registered. (Batch, Compute, ContainerService, KeyValut, Network, Storage)
 
 5. npm start (** Connects to Master)
   >Note: This step should be done in a new terminal window as step 6 requires you be connected.
