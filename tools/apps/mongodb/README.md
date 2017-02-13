@@ -6,7 +6,9 @@ To create this cluster, we need to build a custom MongoDB image which adds an in
 
 ## Create Custom Mongo Image
 
-Make sure that your local registry is running and pointed to the same backing storage as the registry in the DCOS cluster.
+First, make sure that your local registry is running (`npm run registry:start`) and pointed to the same backing storage as the registry in the DCOS cluster.
+
+Then run the following:
 
 ``` bash
 cd Docker
@@ -17,7 +19,7 @@ This should build and push the custom image to the private registry.
 
 ## Deploy the MongoDB containers
 
-To Deploy the cluster, simply run `deploy-mongo.sh`.  This will spin up 3 nodes of Mongo, wait for them to fully initialize, deploy a 4th app to tell those Mongo Containers to link up as a replica set, and then destroy the cluster-ini app.
+To Deploy the cluster, after building the custom image, simply run `deploy-mongo.sh`.  This will spin up 3 nodes of Mongo, wait for them to fully initialize, deploy a 4th app to tell those Mongo Containers to link up as a replica set, and then destroy the cluster-init app.
 
 ## Technical Notes
 
