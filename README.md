@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/dfwtalent/mesos-azure-do.png?label=ready&title=Ready)](https://waffle.io/dfwtalent/mesos-azure-do)
 # Setup DCOS Cluster in Azure
 
 ### Install `dcos` command line utility on your mac laptop
